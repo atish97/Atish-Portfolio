@@ -654,16 +654,26 @@
         }, 320);
       }
 
+      const isHttp = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+      if (isHttp && (window.location.pathname !== '/' || window.location.hash)) {
+        try {
+          history.replaceState(null, '', '/');
+        } catch (e) {}
+      }
+
       const hasSkipHash = ['#home', '#works', '#testimonial', '#faq'].includes(window.location.hash);
       let skipFromStorage = false;
       let savedScrollY = null;
+      let scrollToSection = null;
       try {
         skipFromStorage = sessionStorage.getItem('skipIntro') === '1';
         savedScrollY = sessionStorage.getItem('returnScrollY');
+        scrollToSection = sessionStorage.getItem('scrollToSection');
         sessionStorage.removeItem('skipIntro');
         sessionStorage.removeItem('returnScrollY');
+        sessionStorage.removeItem('scrollToSection');
       } catch (e) {}
-      const cameFromProject = /project-\d+\.html|about\.html/i.test(document.referrer || '');
+      const cameFromProject = /project-\d+\.html|about\.html|about-me|shipping-rules|procurement-operations|customer-support|cryptopulse|smart-invoice|personal-finance/i.test(document.referrer || '');
       const navEntries = performance.getEntriesByType ? performance.getEntriesByType('navigation') : [];
       const isBackForward = navEntries.length > 0 && navEntries[0].type === 'back_forward';
 
@@ -693,14 +703,22 @@
       // 2. Cursor clicks folder + ripple (500ms)
       // 3. 8 mockups open one-by-one toward the right side (600ms -> 1500ms)
       // 4. #444444 dot expands full screen -> fades out smoothly -> Hero fades in (1520ms)
-      if (hasSkipHash || skipFromStorage || cameFromProject || isBackForward) {
+      if (hasSkipHash || skipFromStorage || scrollToSection || cameFromProject || isBackForward) {
         introFinished = true;
         if (overlay) overlay.style.display = 'none';
         body.classList.remove('onboarding-active');
         body.classList.add('page-ready');
-        if (window.location.hash === '#home') {
+        if (scrollToSection) {
+          const targetEl = document.querySelector(scrollToSection);
+          if (targetEl) {
+            requestAnimationFrame(() => {
+              const targetY = targetEl.getBoundingClientRect().top + window.scrollY - 20;
+              window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+            });
+          }
+        } else if (window.location.hash === '#home') {
           try {
-            history.replaceState(null, '', window.location.pathname + window.location.search);
+            history.replaceState(null, '', isHttp ? '/' : (window.location.pathname + window.location.search));
           } catch (e) {}
           window.scrollTo(0, 0);
         } else if (savedScrollY !== null && !hasSkipHash) {

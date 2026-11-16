@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^about-me/?$ about.html [L]
+RewriteRule ^shipping-rules-automation/?$ project-1.html [L]
+RewriteRule ^procurement-operations-dashboard/?$ project-2.html [L]
+RewriteRule ^customer-support-dashboard-ui-for-saas/?$ project-3.html [L]
+RewriteRule ^cryptopulse-asset-tracker/?$ project-4.html [L]
+RewriteRule ^smart-invoice-manager/?$ project-5.html [L]
+RewriteRule ^personal-finance-manager/?$ project-6.html [L]
+

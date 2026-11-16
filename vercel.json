@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/about-me", "destination": "/about.html" },
+    { "source": "/shipping-rules-automation", "destination": "/project-1.html" },
+    { "source": "/procurement-operations-dashboard", "destination": "/project-2.html" },
+    { "source": "/customer-support-dashboard-ui-for-saas", "destination": "/project-3.html" },
+    { "source": "/cryptopulse-asset-tracker", "destination": "/project-4.html" },
+    { "source": "/smart-invoice-manager", "destination": "/project-5.html" },
+    { "source": "/personal-finance-manager", "destination": "/project-6.html" }
+  ]
+}
+

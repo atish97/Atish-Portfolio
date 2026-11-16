@@ -235,6 +235,35 @@
 
   <script>
     (function () {
+
+      const isHttp = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+      if (isHttp && window.location.pathname !== '/personal-finance-manager') {
+        try {
+          history.replaceState(null, '', '/personal-finance-manager');
+        } catch (e) {}
+      }
+
+      document.querySelectorAll('a[href^="index.html#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href') || '';
+          const hashIdx = href.indexOf('#');
+          if (hashIdx !== -1) {
+            e.preventDefault();
+            const hash = href.slice(hashIdx);
+            try {
+              sessionStorage.setItem('skipIntro', '1');
+              sessionStorage.setItem('scrollToSection', hash);
+            } catch (err) {}
+            window.location.href = isHttp ? '/' : 'index.html';
+          }
+        });
+      });
+
+      if (isHttp) {
+        document.querySelectorAll('.nav-brand-avatar').forEach((el) => {
+          el.setAttribute('href', '/');
+        });
+      }
       const scrolledNavbar = document.getElementById('scrolledNavbar');
       let idleTimer = null;
       let isHoveringNav = false;
