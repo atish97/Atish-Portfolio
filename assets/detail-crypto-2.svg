@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 798" width="1088" height="798">
+  <defs>
+    <linearGradient id="bgC2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#354156"/>
+      <stop offset="100%" stop-color="#232B3A"/>
+    </linearGradient>
+    <filter id="shC" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#090C14" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="1088" height="798" fill="url(#bgC2)"/>
+  <g filter="url(#shC)">
+    
+    <rect x="184" y="78" width="320" height="640" rx="42" fill="#0A0C10" stroke="#364156" stroke-width="3"/>
+    <rect x="194" y="88" width="300" height="620" rx="34" fill="#14171F"/>
+    <rect x="296" y="98" width="96" height="22" rx="11" fill="#07080B"/>
+    <text x="214" y="148" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#8B95A8">Privacy Mode Active</text>
+    <text x="214" y="186" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">$ • • • • • •</text>
+    <rect x="412" y="160" width="60" height="30" rx="15" fill="#2563EB"/>
+    <circle cx="456" cy="175" r="11" fill="#FFFFFF"/>
+    <text x="214" y="218" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#22C55E">+4.82% (24h)</text>
+    <!-- Allocation Bar -->
+    <rect x="214" y="250" width="140" height="12" rx="6" fill="#2563EB"/>
+    <rect x="358" y="250" width="76" height="12" rx="6" fill="#EC4899"/>
+    <rect x="438" y="250" width="36" height="12" rx="6" fill="#06B6D4"/>
+    <!-- Asset Cards -->
+    <rect x="214" y="286" width="260" height="82" rx="16" fill="#1C212B"/>
+    <circle cx="246" cy="327" r="18" fill="#F59E0B"/>
+    <text x="246" y="332" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">B</text>
+    <text x="276" y="320" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Bitcoin (BTC)</text>
+    <text x="276" y="342" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">54% Allocation</text>
+    <text x="456" y="330" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#22C55E">+3.2%</text>
+
+    <rect x="214" y="384" width="260" height="82" rx="16" fill="#1C212B"/>
+    <circle cx="246" cy="425" r="18" fill="#6366F1"/>
+    <text x="246" y="430" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">E</text>
+    <text x="276" y="418" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Ethereum (ETH)</text>
+    <text x="276" y="440" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">30% Allocation</text>
+    <text x="456" y="428" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#22C55E">+6.1%</text>
+
+    <rect x="214" y="482" width="260" height="82" rx="16" fill="#1C212B"/>
+    <circle cx="246" cy="523" r="18" fill="#06B6D4"/>
+    <text x="246" y="528" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">S</text>
+    <text x="276" y="516" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Solana (SOL)</text>
+    <text x="276" y="538" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">16% Allocation</text>
+    <text x="456" y="526" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#F43F5E">-1.4%</text>
+
+    
+    <rect x="584" y="78" width="320" height="640" rx="42" fill="#0A0C10" stroke="#364156" stroke-width="3"/>
+    <rect x="594" y="88" width="300" height="620" rx="34" fill="#14171F"/>
+    <rect x="696" y="98" width="96" height="22" rx="11" fill="#07080B"/>
+    <text x="614" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Net Allocation</text>
+    <circle cx="744" cy="282" r="82" fill="none" stroke="#1C212B" stroke-width="26"/>
+    <circle cx="744" cy="282" r="82" fill="none" stroke="#2563EB" stroke-width="26" stroke-dasharray="280 515"/>
+    <circle cx="744" cy="282" r="82" fill="none" stroke="#EC4899" stroke-width="26" stroke-dasharray="150 515" stroke-dashoffset="-280"/>
+    <circle cx="744" cy="282" r="82" fill="none" stroke="#06B6D4" stroke-width="26" stroke-dasharray="85 515" stroke-dashoffset="-430"/>
+    <text x="744" y="278" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">100%</text>
+    <text x="744" y="302" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">3 Active Chains</text>
+    <rect x="614" y="408" width="260" height="72" rx="16" fill="#1C212B"/>
+    <text x="634" y="438" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8B95A8">24h Profit &amp; Loss</text>
+    <text x="634" y="464" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#22C55E">+$618.40</text>
+    <rect x="614" y="496" width="260" height="72" rx="16" fill="#1C212B"/>
+    <text x="634" y="526" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8B95A8">Staking Rewards</text>
+    <text x="634" y="552" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">$142.10 / mo</text>
+  </g>
+</svg>

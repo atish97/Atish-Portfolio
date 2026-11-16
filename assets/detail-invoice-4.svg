@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 798" width="1088" height="798">
+  <defs>
+    <linearGradient id="bgI4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF0FA"/>
+      <stop offset="100%" stop-color="#E2E5F4"/>
+    </linearGradient>
+    <filter id="shI4" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#22255A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1088" height="798" fill="url(#bgI4)"/>
+  <g filter="url(#shI4)">
+    
+    <rect x="184" y="78" width="320" height="640" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="302" y="94" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <rect x="196" y="120" width="296" height="84" rx="18" fill="#3B38EC"/>
+    <text x="218" y="156" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Monthly Billing</text>
+    <text x="218" y="180" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#D5D4FF">Revenue &amp; Collected</text>
+    <text x="216" y="250" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#70758F">Total Collected (July)</text>
+    <text x="216" y="286" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1D2B">$8,450.00</text>
+    <rect x="220" y="340" width="30" height="90" rx="8" fill="#DCE1FA"/>
+    <rect x="264" y="310" width="30" height="120" rx="8" fill="#DCE1FA"/>
+    <rect x="308" y="280" width="30" height="150" rx="8" fill="#3B38EC"/>
+    <rect x="352" y="320" width="30" height="110" rx="8" fill="#DCE1FA"/>
+    <rect x="396" y="295" width="30" height="135" rx="8" fill="#3B38EC"/>
+    <rect x="440" y="330" width="30" height="100" rx="8" fill="#DCE1FA"/>
+
+    
+    <rect x="584" y="78" width="320" height="640" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="702" y="94" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <rect x="596" y="120" width="296" height="84" rx="18" fill="#3B38EC"/>
+    <text x="618" y="156" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Client Directory</text>
+    <text x="618" y="180" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#D5D4FF">Quick tap to bill</text>
+    <rect x="612" y="226" width="264" height="80" rx="14" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <text x="632" y="258" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1A1D2B">Acme Corporation</text>
+    <text x="632" y="282" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#16A34A">$4,200 Paid • 3 Invoices</text>
+    <rect x="612" y="322" width="264" height="80" rx="14" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <text x="632" y="354" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1A1D2B">Lumenix Studio</text>
+    <text x="632" y="378" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#D97706">$950 In Progress</text>
+    <rect x="612" y="418" width="264" height="80" rx="14" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <text x="632" y="450" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1A1D2B">NimbusTech</text>
+    <text x="632" y="474" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#16A34A">$650 Paid</text>
+  </g>
+</svg>

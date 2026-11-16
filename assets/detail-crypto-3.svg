@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 798" width="1088" height="798">
+  <defs>
+    <linearGradient id="bgC3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#354156"/>
+      <stop offset="100%" stop-color="#232B3A"/>
+    </linearGradient>
+    <linearGradient id="areaC3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shC3" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#090C14" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="1088" height="798" fill="url(#bgC3)"/>
+  <g filter="url(#shC3)">
+    
+    <rect x="184" y="78" width="320" height="640" rx="42" fill="#0A0C10" stroke="#364156" stroke-width="3"/>
+    <rect x="194" y="88" width="300" height="620" rx="34" fill="#14171F"/>
+    <rect x="296" y="98" width="96" height="22" rx="11" fill="#07080B"/>
+    <text x="214" y="146" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Bitcoin (BTC)</text>
+    <text x="214" y="186" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">$64,820.40</text>
+    <text x="214" y="212" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#22C55E">+$2,140.20 (+3.41%) Today</text>
+    <!-- Chart -->
+    <path d="M 210 390 C 245 360 270 375 305 335 C 340 295 365 320 400 280 C 435 250 455 268 480 245 L 480 420 L 210 420 Z" fill="url(#areaC3)"/>
+    <path d="M 210 390 C 245 360 270 375 305 335 C 340 295 365 320 400 280 C 435 250 455 268 480 245" fill="none" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+    <line x1="400" y1="240" x2="400" y2="415" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="400" cy="280" r="8" fill="#2563EB" stroke="#FFFFFF" stroke-width="3"/>
+    <rect x="332" y="226" width="136" height="32" rx="8" fill="#1C212B" stroke="#334155"/>
+    <text x="400" y="247" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">$64,190 • 2:30 PM</text>
+    <!-- Timeframe Pills -->
+    <rect x="214" y="444" width="56" height="30" rx="15" fill="#2563EB"/>
+    <text x="242" y="464" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">1D</text>
+    <text x="306" y="464" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">1W</text>
+    <text x="366" y="464" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">1M</text>
+    <text x="426" y="464" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">1Y</text>
+    <!-- CTA Buttons -->
+    <rect x="214" y="592" width="124" height="48" rx="16" fill="#2563EB"/>
+    <text x="276" y="621" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Buy BTC</text>
+    <rect x="350" y="592" width="124" height="48" rx="16" fill="#1C212B"/>
+    <text x="412" y="621" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Swap</text>
+
+    
+    <rect x="584" y="78" width="320" height="640" rx="42" fill="#0A0C10" stroke="#364156" stroke-width="3"/>
+    <rect x="594" y="88" width="300" height="620" rx="34" fill="#14171F"/>
+    <rect x="696" y="98" width="96" height="22" rx="11" fill="#07080B"/>
+    <text x="614" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Swap Crypto</text>
+    <rect x="614" y="182" width="260" height="104" rx="18" fill="#1C212B"/>
+    <text x="634" y="212" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">You Pay</text>
+    <text x="634" y="252" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">1.25 ETH</text>
+    <text x="854" y="252" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8B95A8">$3,840</text>
+    <rect x="614" y="302" width="260" height="104" rx="18" fill="#1C212B"/>
+    <text x="634" y="332" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">You Receive</text>
+    <text x="634" y="372" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#22C55E">0.0592 BTC</text>
+    <rect x="614" y="592" width="260" height="48" rx="16" fill="#2563EB"/>
+    <text x="744" y="621" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Confirm Instant Swap</text>
+  </g>
+</svg>

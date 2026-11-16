@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details — Atish Chakma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="project-details-body page-ready">
+  <div class="page-wrapper" id="mainPage">
+    <!-- Top Pill Navbar (#15:372 & #15:376) -->
+    <header class="top-nav-header" id="topNavbar">
+      <div class="container top-nav-inner">
+        <div class="nav-left-spacer" aria-hidden="true"></div>
+
+        <nav class="pill-navbar" aria-label="Primary Navigation">
+          <a href="index.html#works">Works</a>
+          <a href="index.html#testimonial">Testimonial</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="#about-me" class="nav-no-scroll">About Me</a>
+        </nav>
+
+        <a href="#resume" class="resume-link">
+          <img src="assets/icon-download.svg" alt="" width="24" height="24" />
+          <span>Download Resume</span>
+        </a>
+
+        <button type="button" class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Scrolled Sticky Navbar (#41:2270) — Auto-hides after 1s idle -->
+    <header class="scrolled-navbar" id="scrolledNavbar" aria-label="Scrolled Navigation">
+      <div class="container scrolled-nav-inner">
+        <div class="nav-left-spacer" aria-hidden="true"></div>
+
+        <nav class="scrolled-nav-links">
+          <a href="index.html#works">Works</a>
+          <a href="index.html#testimonial">Testimonial</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="#about-me" class="nav-no-scroll">About Me</a>
+        </nav>
+
+        <a href="#resume" class="resume-link">
+          <img src="assets/icon-download.svg" alt="" width="24" height="24" />
+          <span>Download Resume</span>
+        </a>
+
+        <button type="button" class="mobile-menu-btn mobile-menu-btn-scrolled" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="index.html#works" class="mobile-nav-item">Works</a>
+      <a href="index.html#testimonial" class="mobile-nav-item">Testimonial</a>
+      <a href="index.html#faq" class="mobile-nav-item">FAQ</a>
+      <a href="#about-me" class="mobile-nav-item nav-no-scroll">About Me</a>
+      <a href="#resume" class="resume-link mobile-resume">
+        <img src="assets/icon-download.svg" alt="" width="24" height="24" />
+        <span>Download Resume</span>
+      </a>
+    </div>
+
+    <!-- ==================================================================
+         PROJECT DETAILS CONTENT (#19:1259)
+         ================================================================== -->
+    <main class="project-details-main">
+      <div class="project-details-container">
+        <!-- Hero Header + 3 Meta Cards -->
+        <section class="project-hero">
+          <div class="project-hero-text fade-in-item" style="--delay: 0.04s">
+            <h1 class="project-detail-title" id="projectTitle"></h1>
+            <p class="project-detail-subtitle" id="projectSubtitle"></p>
+          </div>
+
+          <div class="meta-cards-grid fade-in-item" style="--delay: 0.1s">
+            <div class="meta-card">
+              <span class="meta-label">Role</span>
+              <span class="meta-value" id="projectRole"></span>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Industry</span>
+              <span class="meta-value" id="projectIndustry"></span>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Duration</span>
+              <span class="meta-value" id="projectDuration"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Primary Hero Mockup (#19:1564) -->
+        <div class="project-showcase-hero fade-in-item" style="--delay: 0.14s">
+          <img src="" alt="" id="heroImage" />
+        </div>
+
+        <!-- Stage 1, 2, 3 Copy -->
+        <section class="stage-stack">
+          <div class="stage-block fade-in-item">
+            <h2 class="stage-heading" id="stage1Title"></h2>
+            <p class="stage-body" id="stage1Text"></p>
+          </div>
+
+          <div class="stage-block fade-in-item">
+            <h2 class="stage-heading" id="stage2Title"></h2>
+            <p class="stage-body" id="stage2Text"></p>
+          </div>
+
+          <div class="stage-block fade-in-item">
+            <h2 class="stage-heading" id="stage3Title"></h2>
+            <div class="stage-bullets" id="stage3List"></div>
+          </div>
+        </section>
+
+        <!-- Two-Column Mockup Grid 1 (#19:1574 / #19:1576) -->
+        <div class="project-mockup-grid-2 fade-in-item">
+          <div class="project-mockup-tile">
+            <img src="" alt="" id="grid1Img1" />
+          </div>
+          <div class="project-mockup-tile">
+            <img src="" alt="" id="grid1Img2" />
+          </div>
+        </div>
+
+        <!-- Stage 4, 5 Copy -->
+        <section class="stage-stack">
+          <div class="stage-block fade-in-item">
+            <h2 class="stage-heading" id="stage4Title"></h2>
+            <p class="stage-body" id="stage4Text"></p>
+          </div>
+
+          <div class="stage-block fade-in-item">
+            <h2 class="stage-heading" id="stage5Title"></h2>
+            <p class="stage-body" id="stage5Text"></p>
+          </div>
+        </section>
+
+        <!-- Two-Column Mockup Grid 2 (#19:1595 / #19:1596) -->
+        <div class="project-mockup-grid-2 fade-in-item">
+          <div class="project-mockup-tile">
+            <img src="" alt="" id="grid2Img1" />
+          </div>
+          <div class="project-mockup-tile">
+            <img src="" alt="" id="grid2Img2" />
+          </div>
+        </div>
+
+        <!-- Full-Width Showcase Mockup (#19:1597) -->
+        <div class="project-showcase-full fade-in-item">
+          <img src="" alt="" id="fullImage" />
+        </div>
+
+        <!-- Key Outcomes Copy -->
+        <section class="stage-stack stage-stack-outcomes">
+          <div class="stage-block fade-in-item">
+            <h2 class="stage-heading" id="outcomesTitle"></h2>
+            <div class="stage-bullets" id="outcomesList"></div>
+          </div>
+        </section>
+
+        <!-- Other Projects (Exactly 2 Cards) -->
+        <section class="other-projects-section">
+          <h2 class="other-projects-heading fade-in-item">Other Projects</h2>
+          <div class="other-projects-grid" id="otherProjectsGrid"></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ==================================================================
+         CTA BANNER & FOOTER MARQUEE (Identical to index.html)
+         ================================================================== -->
+    <footer class="site-footer" id="contact">
+      <div class="cta-banner">
+        <div class="container cta-inner fade-in-item">
+          <div class="cta-text-col">
+            <h2 class="cta-title">Interested in working together?</h2>
+            <p class="cta-desc">
+              Have a project in mind or an idea you'd like to bring to life? I'd love to hear about it and explore how we can make it happen.
+            </p>
+            <a href="mailto:atishchakma@example.com" class="btn-lets-talk">Let’s Talk</a>
+          </div>
+
+          <div class="cta-avatar-wrap">
+            <img src="assets/profile-photo.png" alt="Atish Chakma" class="cta-avatar" width="130" height="130" />
+            <span class="online-dot" title="Available for projects"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Project Strip + Dark Gradient Overlay + Copyright -->
+      <div class="footer-showcase-wrap">
+        <div class="footer-marquee-track">
+          <!-- Set 1 -->
+          <div class="mockup-card"><img src="assets/mockup-1-6710bb.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-2.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-3.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-4.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-5-61ff1e.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-6.png" alt="" /></div>
+          <div class="mockup-card bg-lavender"><img src="assets/mockup-7-4a2d52.png" alt="" /></div>
+          <div class="mockup-card bg-slate"><img src="assets/mockup-8-159c0c.png" alt="" /></div>
+          <!-- Set 2 -->
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-1-6710bb.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-2.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-3.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-4.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-5-61ff1e.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-6.png" alt="" /></div>
+          <div class="mockup-card bg-lavender" aria-hidden="true"><img src="assets/mockup-7-4a2d52.png" alt="" /></div>
+          <div class="mockup-card bg-slate" aria-hidden="true"><img src="assets/mockup-8-159c0c.png" alt="" /></div>
+        </div>
+
+        <div class="footer-gradient-overlay">
+          <p class="copyright-text">Copyright © 2026. All Rights Reserved by Atish Chakma</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="projects-data.js"></script>
+  <script>
+    (function () {
+      const projects = window.PORTFOLIO_PROJECTS || [];
+      const params = new URLSearchParams(window.location.search);
+      const requestedId = parseInt(params.get('id') || '1', 10);
+      const currentIndex = Math.max(0, projects.findIndex((p) => p.id === requestedId));
+      const project = projects[currentIndex] || projects[0];
+
+      if (project) {
+        document.title = project.title + ' — Atish Chakma';
+        document.getElementById('projectTitle').textContent = project.title;
+        document.getElementById('projectSubtitle').textContent = project.subtitle;
+        document.getElementById('projectRole').textContent = project.role;
+        document.getElementById('projectIndustry').textContent = project.industry;
+        document.getElementById('projectDuration').textContent = project.duration;
+
+        const heroImg = document.getElementById('heroImage');
+        heroImg.src = project.heroImage;
+        heroImg.alt = project.title + ' Overview';
+
+        document.getElementById('stage1Title').textContent = project.stage1.title;
+        document.getElementById('stage1Text').textContent = project.stage1.text;
+        document.getElementById('stage2Title').textContent = project.stage2.title;
+        document.getElementById('stage2Text').textContent = project.stage2.text;
+        document.getElementById('stage3Title').textContent = project.stage3.title;
+
+        const stage3List = document.getElementById('stage3List');
+        stage3List.innerHTML = '';
+        project.stage3.items.forEach((item) => {
+          const p = document.createElement('p');
+          p.className = 'stage-bullet-item';
+          const strong = document.createElement('strong');
+          strong.textContent = item.label + ': ';
+          p.appendChild(strong);
+          p.appendChild(document.createTextNode(item.text));
+          stage3List.appendChild(p);
+        });
+
+        const g1a = document.getElementById('grid1Img1');
+        const g1b = document.getElementById('grid1Img2');
+        g1a.src = project.grid1[0];
+        g1a.alt = project.title + ' Screen 1';
+        g1b.src = project.grid1[1];
+        g1b.alt = project.title + ' Screen 2';
+
+        document.getElementById('stage4Title').textContent = project.stage4.title;
+        document.getElementById('stage4Text').textContent = project.stage4.text;
+        document.getElementById('stage5Title').textContent = project.stage5.title;
+        document.getElementById('stage5Text').textContent = project.stage5.text;
+
+        const g2a = document.getElementById('grid2Img1');
+        const g2b = document.getElementById('grid2Img2');
+        g2a.src = project.grid2[0];
+        g2a.alt = project.title + ' Screen 3';
+        g2b.src = project.grid2[1];
+        g2b.alt = project.title + ' Screen 4';
+
+        const fullImg = document.getElementById('fullImage');
+        fullImg.src = project.fullImage;
+        fullImg.alt = project.title + ' Final Interface';
+
+        document.getElementById('outcomesTitle').textContent = project.outcomes.title;
+        const outcomesList = document.getElementById('outcomesList');
+        outcomesList.innerHTML = '';
+        project.outcomes.items.forEach((item) => {
+          const p = document.createElement('p');
+          p.className = 'stage-bullet-item';
+          const strong = document.createElement('strong');
+          strong.textContent = item.label + ': ';
+          p.appendChild(strong);
+          p.appendChild(document.createTextNode(item.text));
+          outcomesList.appendChild(p);
+        });
+
+        // Populate Other Projects with exactly 2 cards
+        const otherGrid = document.getElementById('otherProjectsGrid');
+        otherGrid.innerHTML = '';
+        const otherTwo = [
+          projects[(currentIndex + 1) % projects.length],
+          projects[(currentIndex + 2) % projects.length]
+        ];
+
+        otherTwo.forEach((other, idx) => {
+          const card = document.createElement('a');
+          card.href = 'project.html?id=' + other.id;
+          card.className = 'project-card fade-in-item';
+          card.style.setProperty('--delay', idx === 0 ? '0.05s' : '0.1s');
+          card.innerHTML = `
+            <div class="project-thumb-wrap">
+              <img src="${other.thumb}" alt="${other.title}" class="project-thumb" />
+              <div class="project-hover-pill">
+                <span>View Project</span>
+                <span class="view-arrow">→</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">${other.title}</h3>
+              <p class="project-desc">${other.cardDesc}</p>
+            </div>
+          `;
+          otherGrid.appendChild(card);
+        });
+      }
+
+      // Smart Dual Navbar + 1-Second Idle Auto-Hide (#41:2270)
+      const scrolledNavbar = document.getElementById('scrolledNavbar');
+      let idleTimer = null;
+
+      function updateNavbarState() {
+        const y = window.scrollY;
+        clearTimeout(idleTimer);
+
+        if (y < 90) {
+          scrolledNavbar.classList.remove('is-visible', 'is-idle-hidden');
+        } else {
+          scrolledNavbar.classList.add('is-visible');
+          scrolledNavbar.classList.remove('is-idle-hidden');
+
+          idleTimer = setTimeout(() => {
+            if (window.scrollY >= 90) {
+              scrolledNavbar.classList.add('is-idle-hidden');
+            }
+          }, 1000);
+        }
+      }
+
+      window.addEventListener('scroll', updateNavbarState, { passive: true });
+      if (scrolledNavbar) {
+        scrolledNavbar.addEventListener('mouseenter', () => clearTimeout(idleTimer));
+        scrolledNavbar.addEventListener('mouseleave', () => {
+          if (window.scrollY >= 90) {
+            idleTimer = setTimeout(() => {
+              scrolledNavbar.classList.add('is-idle-hidden');
+            }, 1000);
+          }
+        });
+      }
+
+      // Mobile Drawer Toggle
+      const mobileBtns = document.querySelectorAll('.mobile-menu-btn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-item');
+
+      mobileBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const isOpen = mobileDrawer.classList.toggle('open');
+          mobileBtns.forEach((b) => {
+            b.classList.toggle('open', isOpen);
+            b.setAttribute('aria-expanded', String(isOpen));
+          });
+        });
+      });
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.remove('open');
+          mobileBtns.forEach((b) => {
+            b.classList.remove('open');
+            b.setAttribute('aria-expanded', 'false');
+          });
+        });
+      });
+
+      // About Me stays in place without scrolling
+      document.querySelectorAll('.nav-no-scroll').forEach((el) => {
+        el.addEventListener('click', (e) => e.preventDefault());
+      });
+
+      // Minimal & Clean Fade-In Observer (Desktop only; instant on Tablet/Mobile)
+      const isDesktop = window.matchMedia('(min-width: 1025px)').matches;
+      const fadeItems = document.querySelectorAll('main .fade-in-item, footer .fade-in-item');
+
+      if (isDesktop) {
+        const fadeObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                fadeObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+        );
+        fadeItems.forEach((el) => fadeObserver.observe(el));
+      } else {
+        fadeItems.forEach((el) => el.classList.add('is-visible'));
+      }
+    })();
+  </script>
+</body>
+</html>
+

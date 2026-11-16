@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 695" width="1120" height="695">
+  <defs>
+    <linearGradient id="bgS5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5F2FF"/>
+      <stop offset="100%" stop-color="#E5DEFF"/>
+    </linearGradient>
+    <filter id="shS5" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#4A3899" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="695" fill="url(#bgS5)"/>
+  <g filter="url(#shS5)">
+    <rect x="48" y="46" width="1024" height="603" rx="20" fill="#FFFFFF"/>
+    <!-- Col 1: Queue -->
+    <rect x="48" y="46" width="268" height="603" rx="20" fill="#FAF8FF"/>
+    <rect x="296" y="46" width="20" height="603" fill="#FAF8FF"/>
+    <line x1="316" y1="46" x2="316" y2="649" stroke="#ECE7FA" stroke-width="1.5"/>
+    <text x="76" y="92" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F1B33">Inbox (18)</text>
+    <rect x="72" y="118" width="220" height="92" rx="14" fill="#FFFFFF" stroke="#6C5CE7" stroke-width="2"/>
+    <text x="90" y="148" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1F1B33">Emily Rhodes</text>
+    <text x="90" y="168" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#777196">Pro Annual seat sync</text>
+    <rect x="90" y="180" width="76" height="20" rx="10" fill="#DCFCE7"/>
+    <text x="128" y="194" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#15803D">SLA 4m</text>
+
+    <rect x="72" y="226" width="220" height="84" rx="14" fill="#FFFFFF" stroke="#ECE7FA" stroke-width="1.5"/>
+    <text x="90" y="256" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1F1B33">Albert Flores</text>
+    <text x="90" y="276" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#777196">SSO redirect loop</text>
+
+    <rect x="72" y="324" width="220" height="84" rx="14" fill="#FFFFFF" stroke="#ECE7FA" stroke-width="1.5"/>
+    <text x="90" y="354" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1F1B33">Leslie Alexander</text>
+    <text x="90" y="374" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#777196">Invoice PDF download</text>
+
+    <!-- Col 2: Chat -->
+    <text x="348" y="92" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F1B33">Conversation Thread</text>
+    <line x1="316" y1="118" x2="778" y2="118" stroke="#F0ECFA" stroke-width="1.5"/>
+    <rect x="348" y="144" width="360" height="82" rx="14" fill="#F7F5FF"/>
+    <text x="368" y="172" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1F1B33">Emily Rhodes</text>
+    <text x="368" y="196" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#4A4466">Our workspace still shows monthly seat limits.</text>
+
+    <rect x="404" y="248" width="342" height="82" rx="14" fill="#6C5CE7"/>
+    <text x="424" y="276" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Atish (Support)</text>
+    <text x="424" y="300" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#EDE8FF">Refreshed your 25 Pro Annual seats just now!</text>
+
+    <rect x="348" y="456" width="398" height="156" rx="16" fill="#FFFFFF" stroke="#E4DDF8" stroke-width="1.5"/>
+    <text x="368" y="492" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8B85A6">Type / for macro replies or press Cmd+Enter to send...</text>
+    <rect x="624" y="560" width="104" height="36" rx="10" fill="#6C5CE7"/>
+    <text x="676" y="583" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Send</text>
+
+    <!-- Col 3: Customer Context -->
+    <line x1="778" y1="46" x2="778" y2="649" stroke="#ECE7FA" stroke-width="1.5"/>
+    <rect x="802" y="76" width="246" height="126" rx="16" fill="url(#hdrS3)"/>
+    <text x="824" y="114" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Emily Rhodes</text>
+    <text x="824" y="138" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#E8E4FF">Pro Annual • 25 Seats</text>
+    <rect x="824" y="154" width="96" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.22"/>
+    <text x="872" y="170" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Active Plan</text>
+
+    <rect x="802" y="222" width="246" height="82" rx="14" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.5"/>
+    <text x="820" y="250" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#B91C1C">Billing Flag</text>
+    <text x="820" y="274" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7F1D1D">Card expires in 4 days</text>
+
+    <text x="802" y="344" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1F1B33">Recent Events</text>
+    <text x="802" y="374" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6B6587">• Paid $1,200 invoice</text>
+    <text x="802" y="402" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6B6587">• Added 5 team members</text>
+    <text x="802" y="430" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6B6587">• Enabled SSO SAML</text>
+  </g>
+</svg>

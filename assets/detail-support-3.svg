@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 798" width="1088" height="798">
+  <defs>
+    <linearGradient id="bgS3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2EEFF"/>
+      <stop offset="100%" stop-color="#E4DCFF"/>
+    </linearGradient>
+    <linearGradient id="hdrS3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C6BF0"/>
+      <stop offset="100%" stop-color="#5B48DF"/>
+    </linearGradient>
+    <filter id="shS3" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#4A3899" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1088" height="798" fill="url(#bgS3)"/>
+  <g filter="url(#shS3)">
+    <!-- Left Context Card -->
+    <rect x="96" y="64" width="430" height="670" rx="24" fill="#FFFFFF"/>
+    <rect x="96" y="64" width="430" height="176" rx="24" fill="url(#hdrS3)"/>
+    <rect x="96" y="216" width="430" height="24" fill="url(#hdrS3)"/>
+    <circle cx="158" cy="144" r="36" fill="#FFFFFF" fill-opacity="0.24"/>
+    <text x="158" y="153" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">RS</text>
+    <text x="212" y="138" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Raina Sethi</text>
+    <text x="212" y="164" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#E8E4FF">Pro Annual • Acme Studio</text>
+    <rect x="212" y="180" width="124" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.22"/>
+    <text x="274" y="198" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">VIP Customer</text>
+
+    <!-- Pinned Urgent Billing Flag -->
+    <rect x="124" y="266" width="374" height="84" rx="14" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.5"/>
+    <text x="146" y="296" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#B91C1C">Pinned Billing Flag</text>
+    <text x="146" y="320" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#7F1D1D">Card expiring in 4 days • Auto-renewal enabled</text>
+
+    <!-- Activity Log -->
+    <text x="124" y="392" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1F1B33">Recent Activity</text>
+    <circle cx="136" cy="430" r="6" fill="#10B981"/>
+    <text x="156" y="435" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3C3759">Upgraded to 25 seats (Today, 10:12 AM)</text>
+    <circle cx="136" cy="472" r="6" fill="#6C5CE7"/>
+    <text x="156" y="477" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3C3759">Invoice #8831 paid via Visa (Today, 10:12 AM)</text>
+    <circle cx="136" cy="514" r="6" fill="#F59E0B"/>
+    <text x="156" y="519" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3C3759">Opened ticket #TK-4920 (Today, 10:14 AM)</text>
+
+    <!-- Right Macro Library Card -->
+    <rect x="562" y="106" width="430" height="586" rx="24" fill="#FFFFFF"/>
+    <text x="594" y="156" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1F1B33">Quick Macro Replies</text>
+    <rect x="594" y="182" width="366" height="44" rx="12" fill="#F6F4FF"/>
+    <text x="614" y="209" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#777196">Search macros with / command...</text>
+
+    <rect x="594" y="250" width="366" height="116" rx="16" fill="#FAF8FF" stroke="#E4DDF8" stroke-width="1.5"/>
+    <text x="616" y="282" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6C5CE7">/seat-sync-refresh</text>
+    <text x="616" y="308" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#4A4466">Confirms Stripe upgrade and refreshes</text>
+    <text x="616" y="330" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#4A4466">workspace seat limits immediately.</text>
+
+    <rect x="594" y="384" width="366" height="116" rx="16" fill="#FAF8FF" stroke="#E4DDF8" stroke-width="1.5"/>
+    <text x="616" y="416" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6C5CE7">/card-expiry-link</text>
+    <text x="616" y="442" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#4A4466">Sends a secure one-click billing portal</text>
+    <text x="616" y="464" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#4A4466">link to update payment method.</text>
+
+    <rect x="594" y="518" width="366" height="116" rx="16" fill="#FAF8FF" stroke="#E4DDF8" stroke-width="1.5"/>
+    <text x="616" y="550" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#6C5CE7">/escalate-tier2</text>
+    <text x="616" y="576" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#4A4466">Hands off conversation with full context</text>
+    <text x="616" y="598" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#4A4466">summary to Tier 2 engineering.</text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 798" width="1088" height="798">
+  <defs>
+    <linearGradient id="bgF3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFF4FD"/>
+      <stop offset="100%" stop-color="#E2ECFB"/>
+    </linearGradient>
+    <filter id="shF3" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#1A356E" flood-opacity="0.11"/>
+    </filter>
+  </defs>
+  <rect width="1088" height="798" fill="url(#bgF3)"/>
+  <g filter="url(#shF3)">
+    
+    <rect x="184" y="78" width="320" height="640" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="302" y="94" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <text x="214" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033">Upcoming Bills</text>
+    <text x="214" y="174" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#687691">Next 7 days • $1,342 total</text>
+    <rect x="214" y="204" width="260" height="86" rx="16" fill="#F7FAFF" stroke="#2458E6" stroke-width="1.5"/>
+    <text x="234" y="236" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#172033">Apartment Rent</text>
+    <text x="234" y="260" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#2458E6">Due in 2 days • Auto-pay</text>
+    <text x="454" y="248" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#172033">$1,250</text>
+
+    <rect x="214" y="306" width="260" height="86" rx="16" fill="#F7FAFF" stroke="#E3ECF9"/>
+    <text x="234" y="338" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#172033">iCloud+ 2TB</text>
+    <text x="234" y="362" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#687691">Due in 5 days</text>
+    <text x="454" y="350" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#172033">$9.99</text>
+
+    <rect x="214" y="408" width="260" height="86" rx="16" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="234" y="440" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#B91C1C">Unused Gym Plan</text>
+    <text x="234" y="464" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7F1D1D">Not used in 60 days • Cancel?</text>
+    <text x="454" y="452" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#B91C1C">$45.00</text>
+
+    
+    <rect x="584" y="78" width="320" height="640" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="702" y="94" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <text x="614" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033">Split Dinner Bill</text>
+    <rect x="614" y="184" width="260" height="110" rx="16" fill="#2458E6"/>
+    <text x="634" y="218" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#CFE0FF">Total Receipt • 3 Friends</text>
+    <text x="634" y="258" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">$126.00</text>
+    <rect x="614" y="314" width="260" height="72" rx="14" fill="#F7FAFF" stroke="#E3ECF9"/>
+    <text x="634" y="355" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#172033">Cameron • $42.00</text>
+    <rect x="614" y="400" width="260" height="72" rx="14" fill="#F7FAFF" stroke="#E3ECF9"/>
+    <text x="634" y="441" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#172033">Mitchell • $42.00</text>
+    <rect x="614" y="592" width="260" height="48" rx="14" fill="#2458E6"/>
+    <text x="744" y="621" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Send Split Request</text>
+  </g>
+</svg>

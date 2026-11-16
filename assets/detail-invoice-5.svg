@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 695" width="1120" height="695">
+  <defs>
+    <linearGradient id="bgI5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF0FA"/>
+      <stop offset="100%" stop-color="#DDE2F2"/>
+    </linearGradient>
+    <filter id="shI5" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#22255A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="695" fill="url(#bgI5)"/>
+  <g filter="url(#shI5)">
+    
+    <rect x="58" y="68" width="232" height="560" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="132" y="84" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <rect x="68" y="106" width="212" height="68" rx="16" fill="#3B38EC"/>
+    <text x="84" y="144" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Studio Nova, NY</text>
+    <rect x="82" y="194" width="184" height="106" rx="14" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <text x="96" y="222" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#70758F">Pending Invoice</text>
+    <text x="96" y="250" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1A1D2B">Acme Corp</text>
+    <text x="96" y="276" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B38EC">Due in 3 Days</text>
+
+    
+    <rect x="314" y="68" width="232" height="560" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="388" y="84" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <rect x="324" y="106" width="212" height="68" rx="16" fill="#3B38EC"/>
+    <text x="340" y="144" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">New Invoice</text>
+    <rect x="338" y="194" width="184" height="64" rx="12" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <text x="352" y="232" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1A1D2B">UX Design • $1,500</text>
+    <rect x="338" y="272" width="184" height="64" rx="12" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <text x="352" y="310" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1A1D2B">Prototype • $500</text>
+    <rect x="338" y="544" width="184" height="44" rx="12" fill="#3B38EC"/>
+    <text x="430" y="571" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Generate PDF</text>
+
+    
+    <rect x="570" y="68" width="232" height="560" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="644" y="84" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <rect x="580" y="106" width="212" height="68" rx="16" fill="#3B38EC"/>
+    <text x="596" y="144" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Payment Progress</text>
+    <circle cx="614" cy="218" r="10" fill="#3B38EC"/>
+    <text x="636" y="223" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1D2B">Invoice Sent</text>
+    <circle cx="614" cy="272" r="10" fill="#3B38EC"/>
+    <text x="636" y="277" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1D2B">Viewed by Client</text>
+    <circle cx="614" cy="326" r="10" fill="#10B981"/>
+    <text x="636" y="331" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#10B981">Payment Received</text>
+
+    
+    <rect x="826" y="68" width="232" height="560" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="900" y="84" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <rect x="836" y="106" width="212" height="68" rx="16" fill="#3B38EC"/>
+    <text x="852" y="144" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Invoice History</text>
+    <rect x="850" y="194" width="184" height="82" rx="14" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <rect x="864" y="206" width="44" height="18" rx="9" fill="#DCFCE7"/>
+    <text x="886" y="219" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#15803D">Paid</text>
+    <text x="864" y="252" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1A1D2B">$2,000 USD</text>
+    <rect x="850" y="290" width="184" height="82" rx="14" fill="#F8F9FD" stroke="#E5E9F5"/>
+    <rect x="864" y="302" width="68" height="18" rx="9" fill="#FEF3C7"/>
+    <text x="898" y="315" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#B45309">In Progress</text>
+    <text x="864" y="348" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1A1D2B">$950 USD</text>
+  </g>
+</svg>

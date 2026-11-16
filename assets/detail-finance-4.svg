@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 798" width="1088" height="798">
+  <defs>
+    <linearGradient id="bgF4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFF4FD"/>
+      <stop offset="100%" stop-color="#E2ECFB"/>
+    </linearGradient>
+    <filter id="shF4" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#1A356E" flood-opacity="0.11"/>
+    </filter>
+  </defs>
+  <rect width="1088" height="798" fill="url(#bgF4)"/>
+  <g filter="url(#shF4)">
+    
+    <rect x="184" y="78" width="320" height="640" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="302" y="94" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <text x="214" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033">Savings Goals</text>
+    <text x="214" y="186" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#2458E6">$12,500.00</text>
+    <rect x="214" y="218" width="260" height="92" rx="16" fill="#F7FAFF" stroke="#E3ECF9"/>
+    <text x="234" y="250" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#172033">Emergency Fund</text>
+    <text x="454" y="250" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#2458E6">$5,000</text>
+    <rect x="234" y="272" width="220" height="10" rx="5" fill="#E3ECF9"/>
+    <rect x="234" y="272" width="185" height="10" rx="5" fill="#2458E6"/>
+
+    <rect x="214" y="326" width="260" height="92" rx="16" fill="#F7FAFF" stroke="#E3ECF9"/>
+    <text x="234" y="358" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#172033">Travel Savings</text>
+    <text x="454" y="358" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#10B981">$4,200</text>
+    <rect x="234" y="380" width="220" height="10" rx="5" fill="#E3ECF9"/>
+    <rect x="234" y="380" width="145" height="10" rx="5" fill="#10B981"/>
+
+    <rect x="214" y="434" width="260" height="92" rx="16" fill="#F7FAFF" stroke="#E3ECF9"/>
+    <text x="234" y="466" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#172033">Home Upgrade</text>
+    <text x="454" y="466" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#F59E0B">$3,300</text>
+    <rect x="234" y="488" width="220" height="10" rx="5" fill="#E3ECF9"/>
+    <rect x="234" y="488" width="110" height="10" rx="5" fill="#F59E0B"/>
+
+    
+    <rect x="584" y="78" width="320" height="640" rx="40" fill="#FFFFFF" stroke="#DCE1F0" stroke-width="3"/>
+    <rect x="702" y="94" width="84" height="18" rx="9" fill="#E5E9F5"/>
+    <text x="614" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033">Cash Flow Trend</text>
+    <text x="614" y="186" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#10B981">+$1,480 Net</text>
+    <path d="M 614 340 Q 660 280 710 300 T 800 240 T 874 215" fill="none" stroke="#2458E6" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="800" cy="240" r="8" fill="#2458E6" stroke="#FFFFFF" stroke-width="3"/>
+    <rect x="614" y="402" width="260" height="120" rx="16" fill="#F7FAFF" stroke="#E3ECF9"/>
+    <text x="634" y="438" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#172033">Smart Budget Tip</text>
+    <text x="634" y="466" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#687691">Your dining spend is 14% lower</text>
+    <text x="634" y="488" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#687691">than last month. Great pace!</text>
+  </g>
+</svg>

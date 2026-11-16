@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 798" width="1088" height="798">
+  <defs>
+    <linearGradient id="bgC4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#354156"/>
+      <stop offset="100%" stop-color="#232B3A"/>
+    </linearGradient>
+    <filter id="shC4" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#090C14" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="1088" height="798" fill="url(#bgC4)"/>
+  <g filter="url(#shC4)">
+    
+    <rect x="184" y="78" width="320" height="640" rx="42" fill="#0A0C10" stroke="#364156" stroke-width="3"/>
+    <rect x="194" y="88" width="300" height="620" rx="34" fill="#14171F"/>
+    <rect x="296" y="98" width="96" height="22" rx="11" fill="#07080B"/>
+    <text x="214" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Price Alerts</text>
+    <rect x="214" y="182" width="260" height="92" rx="16" fill="#1C212B"/>
+    <text x="234" y="214" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTC Above $68,000</text>
+    <text x="234" y="240" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">Push + Sound Alert</text>
+    <rect x="408" y="210" width="46" height="26" rx="13" fill="#2563EB"/>
+    <circle cx="441" cy="223" r="10" fill="#FFFFFF"/>
+
+    <rect x="214" y="290" width="260" height="92" rx="16" fill="#1C212B"/>
+    <text x="234" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">ETH Below $2,950</text>
+    <text x="234" y="348" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">Instant Notification</text>
+    <rect x="408" y="318" width="46" height="26" rx="13" fill="#2563EB"/>
+    <circle cx="441" cy="331" r="10" fill="#FFFFFF"/>
+
+    <rect x="214" y="398" width="260" height="92" rx="16" fill="#1C212B"/>
+    <text x="234" y="430" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">SOL +10% Daily Move</text>
+    <text x="234" y="456" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">Volatility Alert</text>
+    <rect x="408" y="426" width="46" height="26" rx="13" fill="#334155"/>
+    <circle cx="421" cy="439" r="10" fill="#94A3B8"/>
+
+    
+    <rect x="584" y="78" width="320" height="640" rx="42" fill="#0A0C10" stroke="#364156" stroke-width="3"/>
+    <rect x="594" y="88" width="300" height="620" rx="34" fill="#14171F"/>
+    <rect x="696" y="98" width="96" height="22" rx="11" fill="#07080B"/>
+    <text x="614" y="148" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Pinned Watchlist</text>
+    <rect x="614" y="182" width="260" height="84" rx="16" fill="#1C212B"/>
+    <text x="634" y="216" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Bitcoin</text>
+    <text x="634" y="238" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">$64,820</text>
+    <path d="M 730 232 L 750 222 L 770 226 L 795 208" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
+    <text x="854" y="226" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#22C55E">+3.4%</text>
+
+    <rect x="614" y="282" width="260" height="84" rx="16" fill="#1C212B"/>
+    <text x="634" y="316" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Ethereum</text>
+    <text x="634" y="338" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">$3,180</text>
+    <path d="M 730 330 L 750 326 L 770 315 L 795 306" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
+    <text x="854" y="326" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#22C55E">+5.8%</text>
+
+    <rect x="614" y="382" width="260" height="84" rx="16" fill="#1C212B"/>
+    <text x="634" y="416" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Chainlink</text>
+    <text x="634" y="438" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#8B95A8">$18.45</text>
+    <path d="M 730 412 L 750 422 L 770 420 L 795 434" fill="none" stroke="#F43F5E" stroke-width="3" stroke-linecap="round"/>
+    <text x="854" y="426" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#F43F5E">-1.2%</text>
+  </g>
+</svg>

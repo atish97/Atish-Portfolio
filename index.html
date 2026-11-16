@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atish Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/profile-photo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="onboarding-active">
+  <!-- ======================================================================
+       ONBOARDING AUTO-INTERACTION OVERLAY (#9:176)
+       ====================================================================== -->
+  <div id="onboardingOverlay" class="onboarding-overlay" aria-hidden="true">
+    <div class="onboarding-stage">
+      <!-- Folder Assembly (#9:178, #9:179, #9:272) -->
+      <div class="folder-unit" id="folderUnit">
+        <img src="assets/folder-back.svg" alt="" class="folder-back" />
+
+        <!-- 8 Mockup Cards tucked inside the folder, fanning out on click -->
+        <div class="folder-cards-fan" id="folderCardsFan">
+          <div class="fan-card fan-card-1"><img src="assets/mockup-1-6710bb.png" alt="" /></div>
+          <div class="fan-card fan-card-2"><img src="assets/mockup-2.png" alt="" /></div>
+          <div class="fan-card fan-card-3"><img src="assets/mockup-3.png" alt="" /></div>
+          <div class="fan-card fan-card-4"><img src="assets/mockup-4.png" alt="" /></div>
+          <div class="fan-card fan-card-5"><img src="assets/mockup-5-61ff1e.png" alt="" /></div>
+          <div class="fan-card fan-card-6"><img src="assets/mockup-6.png" alt="" /></div>
+          <div class="fan-card fan-card-7"><img src="assets/mockup-7-4a2d52.png" alt="" /></div>
+          <div class="fan-card fan-card-8"><img src="assets/mockup-8-159c0c.png" alt="" /></div>
+        </div>
+
+        <img src="assets/folder-front.svg" alt="" class="folder-front" />
+        <span class="folder-click-ripple" id="folderRipple"></span>
+        <p class="folder-label">Atish Portfolio.file</p>
+      </div>
+
+      <!-- Animated Pointer Cursor (#9:200) -->
+      <img src="assets/cursor.svg" alt="" class="onboarding-cursor" id="onboardingCursor" />
+    </div>
+
+    <!-- #444444 Expanding Dot Veil -->
+    <div class="onboarding-dot-veil" id="onboardingDotVeil"></div>
+
+    <button type="button" class="skip-intro-btn" id="skipIntroBtn">Skip Intro →</button>
+  </div>
+
+  <!-- ======================================================================
+       MAIN LANDING PAGE (#15:312)
+       ====================================================================== -->
+  <div class="page-wrapper" id="mainPage">
+    <!-- Top Pill Navbar (#15:372 & #15:376) -->
+    <header class="top-nav-header" id="topNavbar">
+      <div class="container top-nav-inner">
+        <div class="nav-left-spacer" aria-hidden="true"></div>
+
+        <nav class="pill-navbar" aria-label="Primary Navigation">
+          <a href="#works">Works</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#faq">FAQ</a>
+          <a href="about.html">About Me</a>
+        </nav>
+
+        <a href="#resume" class="resume-link">
+          <img src="assets/icon-download.svg" alt="" width="24" height="24" />
+          <span>Download Resume</span>
+        </a>
+
+        <button type="button" class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Scrolled Sticky Navbar (#41:2270) — Auto-hides after 1s idle -->
+    <header class="scrolled-navbar" id="scrolledNavbar" aria-label="Scrolled Navigation">
+      <div class="container scrolled-nav-inner">
+        <div class="nav-left-spacer">
+          <a href="#top" class="nav-brand-avatar nav-scroll-top" aria-label="Scroll to top">
+            <img src="assets/nav-signature.svg" alt="Atish Chakma" height="38" />
+          </a>
+        </div>
+
+        <nav class="scrolled-nav-links">
+          <a href="#works">Works</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#faq">FAQ</a>
+          <a href="about.html">About Me</a>
+        </nav>
+
+        <a href="#resume" class="resume-link">
+          <img src="assets/icon-download.svg" alt="" width="24" height="24" />
+          <span>Download Resume</span>
+        </a>
+
+        <button type="button" class="mobile-menu-btn mobile-menu-btn-scrolled" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#works" class="mobile-nav-item">Works</a>
+      <a href="#testimonial" class="mobile-nav-item">Testimonial</a>
+      <a href="#faq" class="mobile-nav-item">FAQ</a>
+      <a href="about.html" class="mobile-nav-item">About Me</a>
+      <a href="#resume" class="resume-link mobile-resume">
+        <img src="assets/icon-download.svg" alt="" width="24" height="24" />
+        <span>Download Resume</span>
+      </a>
+    </div>
+
+    <!-- ====================================================================
+         HERO SURFACE (#19:455 - #FAFAFA, bottom radius 60px)
+         ==================================================================== -->
+    <section class="hero-surface" id="about">
+      <div class="container hero-content">
+        <div class="hero-intro-block">
+          <div class="hero-photo-wrap fade-in-item" style="--delay: 0.05s">
+            <img src="assets/profile-photo.png" alt="Atish Chakma" class="hero-photo" width="70" height="70" />
+          </div>
+
+          <div class="hero-text-stack">
+            <div class="hero-headings fade-in-item" style="--delay: 0.12s">
+              <h1 class="hero-title">
+                I'm <strong>Atish Chakma</strong>, a UX Engineer focused on bridging the gap between design and development to create intuitive, functional, and user friendly digital experiences.
+              </h1>
+              <p class="hero-subtitle">
+                I enjoy understanding user needs, solving design challenges, and turning complex ideas into simple and meaningful experiences.
+              </p>
+            </div>
+
+            <!-- Social Links (#15:405) -->
+            <div class="social-links fade-in-item" style="--delay: 0.18s">
+              <a href="https://dribbble.com/AtishUX" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Dribbble">
+                <img src="assets/icon-dribbble.svg" alt="" width="20" height="20" />
+              </a>
+              <a href="https://www.linkedin.com/in/uxatish/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn">
+                <img src="assets/icon-linkedin.svg" alt="" width="19" height="19" />
+              </a>
+              <a href="https://www.facebook.com/uxatish" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Facebook">
+                <img src="assets/icon-facebook.svg" alt="" width="18" height="18" />
+              </a>
+              <a href="https://www.fiverr.com/s/P4wNdgx" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Fiverr">
+                <img src="assets/icon-fiverr.svg" alt="" width="20" height="20" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Portfolio Mockup Horizontal Strip (#15:421) -->
+      <div class="hero-marquee-outer fade-in-item" id="heroMarquee" style="--delay: 0.24s">
+        <div class="hero-marquee-track" id="heroMarqueeTrack">
+          <!-- Set 1 -->
+          <div class="mockup-card" data-slot="0"><img src="assets/mockup-1-6710bb.png" alt="Portfolio Mockup 1" /></div>
+          <div class="mockup-card" data-slot="1"><img src="assets/mockup-2.png" alt="Portfolio Mockup 2" /></div>
+          <div class="mockup-card" data-slot="2"><img src="assets/mockup-3.png" alt="Portfolio Mockup 3" /></div>
+          <div class="mockup-card" data-slot="3"><img src="assets/mockup-4.png" alt="Portfolio Mockup 4" /></div>
+          <div class="mockup-card" data-slot="4"><img src="assets/mockup-5-61ff1e.png" alt="Portfolio Mockup 5" /></div>
+          <div class="mockup-card" data-slot="5"><img src="assets/mockup-6.png" alt="Portfolio Mockup 6" /></div>
+          <div class="mockup-card bg-lavender" data-slot="6"><img src="assets/mockup-7-4a2d52.png" alt="Portfolio Mockup 7" /></div>
+          <div class="mockup-card bg-slate" data-slot="7"><img src="assets/mockup-8-159c0c.png" alt="Portfolio Mockup 8" /></div>
+          <!-- Set 2 (Seamless infinite loop) -->
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-1-6710bb.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-2.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-3.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-4.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-5-61ff1e.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-6.png" alt="" /></div>
+          <div class="mockup-card bg-lavender" aria-hidden="true"><img src="assets/mockup-7-4a2d52.png" alt="" /></div>
+          <div class="mockup-card bg-slate" aria-hidden="true"><img src="assets/mockup-8-159c0c.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- ==================================================================
+           SELECTED PROJECTS (#19:535 - #19:559)
+           ================================================================== -->
+      <section class="projects-section" id="works">
+        <div class="container">
+          <h2 class="section-heading fade-in-item">Selected Projects</h2>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <a href="project-1.html" class="project-card fade-in-item" style="--delay: 0.05s">
+              <div class="project-thumb-wrap">
+                <img src="assets/project-1.png" alt="Shipping Rules Automation" class="project-thumb" />
+                <div class="project-hover-pill">
+                  <span>View Project</span>
+                  <span class="view-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Shipping Rules Automation</h3>
+                <p class="project-desc">
+                  Manage shipping rules, automate workflows, and monitor fulfillment settings from one centralized interface.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="project-2.html" class="project-card fade-in-item" style="--delay: 0.1s">
+              <div class="project-thumb-wrap">
+                <img src="assets/mockup-4.png" alt="Procurement Operations Dashboard" class="project-thumb" />
+                <div class="project-hover-pill">
+                  <span>View Project</span>
+                  <span class="view-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Procurement Operations Dashboard</h3>
+                <p class="project-desc">
+                  Track purchase requests, supplier activity, approvals, and spending across procurement workflows.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="project-3.html" class="project-card fade-in-item" style="--delay: 0.15s">
+              <div class="project-thumb-wrap">
+                <img src="assets/project-3-5d01a6.png" alt="Customer Support Dashboard UI for SaaS" class="project-thumb" />
+                <div class="project-hover-pill">
+                  <span>View Project</span>
+                  <span class="view-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Customer Support Dashboard UI for SaaS</h3>
+                <p class="project-desc">
+                  A collection of projects I've worked on, exploring ideas, solving problems, and creating thoughtful UX.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="project-4.html" class="project-card fade-in-item" style="--delay: 0.05s">
+              <div class="project-thumb-wrap">
+                <img src="assets/project-4.png" alt="CryptoPulse Asset Tracker" class="project-thumb" />
+                <div class="project-hover-pill">
+                  <span>View Project</span>
+                  <span class="view-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">CryptoPulse Asset Tracker</h3>
+                <p class="project-desc">
+                  Follow portfolio performance, market movements, and digital asset activity through a focused mobile experience.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="project-5.html" class="project-card fade-in-item" style="--delay: 0.1s">
+              <div class="project-thumb-wrap">
+                <img src="assets/project-5.png" alt="Smart Invoice Manager" class="project-thumb" />
+                <div class="project-hover-pill">
+                  <span>View Project</span>
+                  <span class="view-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Smart Invoice Manager</h3>
+                <p class="project-desc">
+                  Create invoices, track payments, and manage billing activity with a simple mobile workflow.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="project-6.html" class="project-card fade-in-item" style="--delay: 0.15s">
+              <div class="project-thumb-wrap">
+                <img src="assets/project-6.png" alt="Personal Finance Manager" class="project-thumb" />
+                <div class="project-hover-pill">
+                  <span>View Project</span>
+                  <span class="view-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Personal Finance Manager</h3>
+                <p class="project-desc">
+                  Review account balances, send transfers, and understand spending through clear mobile financial tools.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           KIND WORDS / TESTIMONIALS (#19:619 & #36:2261)
+           ================================================================== -->
+      <section class="testimonials-section" id="testimonial">
+        <div class="container testimonials-header fade-in-item">
+          <h2 class="section-heading">Kind Words</h2>
+
+          <div class="testimonial-controls">
+            <button type="button" class="circle-arrow-btn" id="testiPrevBtn" aria-label="Previous Testimonial">
+              <img src="assets/icon-arrow-left.svg" alt="" width="24" height="24" />
+            </button>
+            <button type="button" class="circle-arrow-btn" id="testiNextBtn" aria-label="Next Testimonial">
+              <img src="assets/icon-arrow-right.svg" alt="" width="24" height="24" />
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonials-viewport fade-in-item" id="testiViewport">
+          <div class="testimonials-track" id="testiTrack">
+            <!-- Testimonial 1 -->
+            <article class="testimonial-card">
+              <div class="testi-top">
+                <div class="testi-header-row">
+                  <img src="assets/client-1.png" alt="juhbren" class="testi-avatar" width="50" height="50" />
+                  <img src="assets/icon-fiverr-green.svg" alt="Fiverr" class="testi-platform" width="42" height="42" />
+                </div>
+                <div class="testi-body">
+                  <h3 class="testi-author">juhbren</h3>
+                  <p class="testi-quote">
+                    Atish was very polite and easy to work with, he also got my project done just in time for when I needed it. I would definitely recommend him to my friends and use his services in the future! He is your guy.
+                  </p>
+                </div>
+              </div>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+              </div>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="testimonial-card">
+              <div class="testi-top">
+                <div class="testi-header-row">
+                  <img src="assets/client-2.png" alt="allhumanscry" class="testi-avatar" width="50" height="50" />
+                  <img src="assets/icon-fiverr-green.svg" alt="Fiverr" class="testi-platform" width="42" height="42" />
+                </div>
+                <div class="testi-body">
+                  <h3 class="testi-author">allhumanscry</h3>
+                  <p class="testi-quote">
+                    Atish was always attending to my needs and delivered after 24 hours. He's fast, professional and polite. Would definitely work with him again in the near future. I thoroughly recommend Atish.
+                  </p>
+                </div>
+              </div>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+              </div>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="testimonial-card">
+              <div class="testi-top">
+                <div class="testi-header-row">
+                  <img src="assets/client-3.png" alt="drewwenning" class="testi-avatar" width="50" height="50" />
+                  <img src="assets/icon-fiverr-green.svg" alt="Fiverr" class="testi-platform" width="42" height="42" />
+                </div>
+                <div class="testi-body">
+                  <h3 class="testi-author">drewwenning</h3>
+                  <p class="testi-quote">
+                    We are building a highly impactful SaaS product for the athletic industry in the United States, and delivering an exceptional user experience is critical to our success. We engaged Atish for a trial project focused on a portion of our UI/UX work, and he exceeded our expectations.
+                  </p>
+                </div>
+              </div>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+              </div>
+            </article>
+
+            <!-- Testimonial 4 -->
+            <article class="testimonial-card">
+              <div class="testi-top">
+                <div class="testi-header-row">
+                  <img src="assets/client-4.png" alt="eric_christoph" class="testi-avatar" width="50" height="50" />
+                  <img src="assets/icon-fiverr-green.svg" alt="Fiverr" class="testi-platform" width="42" height="42" />
+                </div>
+                <div class="testi-body">
+                  <h3 class="testi-author">eric_christoph</h3>
+                  <p class="testi-quote">
+                    Working with Atish was a wonderful experience that exceeded my expectations. He was prompt, professional, and delivered exactly what we asked for before the due date. We will be sure to reach out to him.
+                  </p>
+                </div>
+              </div>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+              </div>
+            </article>
+
+            <!-- Testimonial 5 -->
+            <article class="testimonial-card">
+              <div class="testi-top">
+                <div class="testi-header-row">
+                  <img src="assets/client-5.png" alt="suemahoney" class="testi-avatar" width="50" height="50" />
+                  <img src="assets/icon-fiverr-green.svg" alt="Fiverr" class="testi-platform" width="42" height="42" />
+                </div>
+                <div class="testi-body">
+                  <h3 class="testi-author">suemahoney</h3>
+                  <p class="testi-quote">
+                    Atish was truly great to work with. He took my feedback superbly and tweaked where needed to be. He was very quick with communication and actions. I thoroughly recommend Atish.
+                  </p>
+                </div>
+              </div>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+              </div>
+            </article>
+
+            <!-- Testimonial 6 -->
+            <article class="testimonial-card">
+              <div class="testi-top">
+                <div class="testi-header-row">
+                  <img src="assets/client-6.png" alt="cjmcallister" class="testi-avatar" width="50" height="50" />
+                  <img src="assets/icon-fiverr-green.svg" alt="Fiverr" class="testi-platform" width="42" height="42" />
+                </div>
+                <div class="testi-body">
+                  <h3 class="testi-author">cjmcallister</h3>
+                  <p class="testi-quote">
+                    Atish and his team work very efficiently. They will go out of there way to make sure you are satisfied. NO QUESTIONS ASKED! We will be sure to reach out to him.
+                  </p>
+                </div>
+              </div>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+                <img src="assets/icon-star.svg" alt="" width="24" height="24" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           FREQUENTLY ASKED QUESTIONS (#19:851 - #19:906)
+           ================================================================== -->
+      <section class="faq-section" id="faq">
+        <div class="container faq-container">
+          <h2 class="section-heading text-center fade-in-item">Frequently Asked Questions</h2>
+
+          <div class="faq-list">
+            <div class="faq-item fade-in-item" style="--delay: 0.04s">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Do you only work on design, or do you handle development too?</span>
+                <img src="assets/icon-faq-plus.svg" alt="" class="faq-chevron" width="24" height="24" />
+              </button>
+              <div class="faq-answer-wrap">
+                <p class="faq-answer">
+                  As a UX Engineer, I work across both design and development. I handle the process from understanding the requirements and designing user experiences to building functional interfaces. This allows me to bring ideas from the initial concept to a working product.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in-item" style="--delay: 0.08s">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>How much do you charge for a project?</span>
+                <img src="assets/icon-faq-plus.svg" alt="" class="faq-chevron" width="24" height="24" />
+              </button>
+              <div class="faq-answer-wrap">
+                <p class="faq-answer">
+                  I always try to keep my pricing reasonable and flexible. Every project is different, so my rates depend on the project requirements, complexity, and overall scope. The best way to get an accurate estimate is to share your ideas with me so we can discuss the details.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in-item" style="--delay: 0.12s">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>What does your design process look like?</span>
+                <img src="assets/icon-faq-plus.svg" alt="" class="faq-chevron" width="24" height="24" />
+              </button>
+              <div class="faq-answer-wrap">
+                <p class="faq-answer">
+                  I usually start by understanding the project, its goals, and the people who will use it. From there, I explore ideas, map out user flows, create wireframes, and gradually move into high fidelity designs. Once everything feels right, I move towards development, testing, and refining the final experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in-item" style="--delay: 0.16s">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>What kind of design inspires you?</span>
+                <img src="assets/icon-faq-plus.svg" alt="" class="faq-chevron" width="24" height="24" />
+              </button>
+              <div class="faq-answer-wrap">
+                <p class="faq-answer">
+                  I'm naturally drawn to clean and minimal design. I believe a good interface should feel simple without sacrificing functionality. I pay close attention to user flows and always look for ways to reduce unnecessary steps, remove friction, and make the overall experience more intuitive.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in-item" style="--delay: 0.2s">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Can you work with an existing product or design?</span>
+                <img src="assets/icon-faq-plus.svg" alt="" class="faq-chevron" width="24" height="24" />
+              </button>
+              <div class="faq-answer-wrap">
+                <p class="faq-answer">
+                  Absolutely. I enjoy working on both new ideas and existing products. Whether it's improving an existing user experience, refining interfaces, fixing usability issues, or introducing new features, I can help make the product more intuitive and easier to use.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================================================================
+         CTA BANNER & FOOTER MARQUEE (#33:2074, #19:931, #19:1251, #19:951)
+         ================================================================== -->
+    <footer class="site-footer" id="contact">
+      <div class="cta-banner">
+        <div class="container cta-inner fade-in-item">
+          <div class="cta-text-col">
+            <h2 class="cta-title">Interested in working together?</h2>
+            <p class="cta-desc">
+              Have a project in mind or an idea you'd like to bring to life? I'd love to hear about it and explore how we can make it happen.
+            </p>
+            <a href="https://wa.me/8801575835243" target="_blank" rel="noopener noreferrer" class="btn-lets-talk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z" fill="#25D366"/>
+                <path d="M17.47 14.38C17.17 14.23 15.71 13.51 15.44 13.41C15.17 13.31 14.97 13.26 14.77 13.56C14.57 13.86 14 14.53 13.83 14.73C13.66 14.93 13.48 14.95 13.19 14.8C12.89 14.65 11.93 14.34 10.79 13.32C9.9 12.53 9.3 11.55 9.13 11.25C8.96 10.95 9.11 10.79 9.26 10.64C9.39 10.51 9.56 10.29 9.71 10.12C9.86 9.95 9.91 9.82 10.01 9.62C10.11 9.42 10.06 9.25 9.98 9.1C9.91 8.95 9.31 7.49 9.06 6.89C8.82 6.31 8.57 6.39 8.39 6.38L7.82 6.37C7.62 6.37 7.3 6.44 7.03 6.74C6.76 7.04 5.99 7.76 5.99 9.22C5.99 10.68 7.05 12.09 7.2 12.29C7.35 12.49 9.29 15.48 12.26 16.76C12.97 17.07 13.52 17.25 13.95 17.39C14.66 17.61 15.3 17.58 15.81 17.5C16.38 17.42 17.57 16.78 17.81 16.09C18.06 15.4 18.06 14.81 17.98 14.68C17.91 14.56 17.71 14.48 17.47 14.38Z" fill="#FFFFFF"/>
+              </svg>
+              <span>Let’s talk on WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="cta-avatar-wrap">
+            <img src="assets/profile-photo.png" alt="Atish Chakma" class="cta-avatar" width="130" height="130" />
+            <span class="online-dot" title="Available for projects"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Project Strip + Dark Gradient Overlay + Copyright -->
+      <div class="footer-showcase-wrap">
+        <div class="footer-marquee-track">
+          <!-- Set 1 -->
+          <div class="mockup-card"><img src="assets/mockup-1-6710bb.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-2.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-3.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-4.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-5-61ff1e.png" alt="" /></div>
+          <div class="mockup-card"><img src="assets/mockup-6.png" alt="" /></div>
+          <div class="mockup-card bg-lavender"><img src="assets/mockup-7-4a2d52.png" alt="" /></div>
+          <div class="mockup-card bg-slate"><img src="assets/mockup-8-159c0c.png" alt="" /></div>
+          <!-- Set 2 -->
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-1-6710bb.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-2.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-3.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-4.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-5-61ff1e.png" alt="" /></div>
+          <div class="mockup-card" aria-hidden="true"><img src="assets/mockup-6.png" alt="" /></div>
+          <div class="mockup-card bg-lavender" aria-hidden="true"><img src="assets/mockup-7-4a2d52.png" alt="" /></div>
+          <div class="mockup-card bg-slate" aria-hidden="true"><img src="assets/mockup-8-159c0c.png" alt="" /></div>
+        </div>
+
+        <div class="footer-gradient-overlay">
+          <p class="copyright-text">Copyright © 2026. All Rights Reserved by Atish Chakma</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ======================================================================
+       PORTFOLIO INTERACTIONS & ANIMATION ENGINE
+       ====================================================================== -->
+  <script>
+    (function () {
+      const body = document.body;
+      const overlay = document.getElementById('onboardingOverlay');
+      const cursor = document.getElementById('onboardingCursor');
+      const folderUnit = document.getElementById('folderUnit');
+      const folderRipple = document.getElementById('folderRipple');
+      const dotVeil = document.getElementById('onboardingDotVeil');
+      const skipBtn = document.getElementById('skipIntroBtn');
+      const heroMarqueeTrack = document.getElementById('heroMarqueeTrack');
+      const heroFadeItems = Array.from(document.querySelectorAll('.hero-surface .fade-in-item'));
+
+      let onboardingTimers = [];
+      let introFinished = false;
+
+      // Keep hero fade items hidden until onboarding hands off to landing page
+      heroFadeItems.forEach((el) => el.classList.remove('is-visible'));
+
+      function revealHeroContent() {
+        heroFadeItems.forEach((el) => {
+          el.classList.add('is-visible');
+        });
+      }
+
+      function startDotTransition() {
+        if (introFinished) return;
+        if (skipBtn) skipBtn.style.opacity = '0';
+
+        // 1. Expand #444444 dot to cover full screen
+        if (dotVeil) {
+          dotVeil.classList.add('is-expanding');
+        }
+
+        // 2. Once full screen is #444444, reveal landing page underneath & fade out #444444 veil
+        onboardingTimers.push(
+          setTimeout(() => {
+            overlay.classList.add('is-veil-fading');
+            body.classList.remove('onboarding-active');
+            body.classList.add('page-ready');
+            revealHeroContent();
+            if (heroMarqueeTrack) {
+              heroMarqueeTrack.style.opacity = '1';
+              heroMarqueeTrack.classList.add('is-running');
+            }
+          }, 760),
+          setTimeout(() => {
+            overlay.style.display = 'none';
+            introFinished = true;
+          }, 1680)
+        );
+      }
+
+      function finishOnboardingImmediate() {
+        if (introFinished) return;
+        introFinished = true;
+        onboardingTimers.forEach(clearTimeout);
+        if (heroMarqueeTrack) {
+          heroMarqueeTrack.style.opacity = '1';
+          heroMarqueeTrack.classList.add('is-running');
+        }
+        overlay.classList.add('is-exiting');
+        body.classList.remove('onboarding-active');
+        body.classList.add('page-ready');
+        revealHeroContent();
+        setTimeout(() => {
+          overlay.style.display = 'none';
+        }, 320);
+      }
+
+      const hasSkipHash = ['#home', '#works', '#testimonial', '#faq'].includes(window.location.hash);
+      let skipFromStorage = false;
+      try {
+        skipFromStorage = sessionStorage.getItem('skipIntro') === '1';
+        sessionStorage.removeItem('skipIntro');
+      } catch (e) {}
+      const cameFromProject = /project-\d+\.html/i.test(document.referrer || '');
+
+      // Onboarding Choreography:
+      // 1. Cursor glides quickly onto the folder (40ms -> 480ms)
+      // 2. Cursor clicks folder + ripple (500ms)
+      // 3. 8 mockups open one-by-one toward the right side (600ms -> 1500ms)
+      // 4. #444444 dot expands full screen -> fades out smoothly -> Hero fades in (1520ms)
+      if (hasSkipHash || skipFromStorage || cameFromProject) {
+        introFinished = true;
+        if (overlay) overlay.style.display = 'none';
+        body.classList.remove('onboarding-active');
+        body.classList.add('page-ready');
+        if (window.location.hash === '#home') {
+          try {
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+          } catch (e) {}
+          window.scrollTo(0, 0);
+        }
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            revealHeroContent();
+            if (heroMarqueeTrack) {
+              heroMarqueeTrack.style.opacity = '1';
+              heroMarqueeTrack.classList.add('is-running');
+            }
+          });
+        });
+      } else if (overlay && cursor && folderUnit) {
+        onboardingTimers.push(
+          setTimeout(() => {
+            cursor.classList.add('move-to-folder');
+          }, 40),
+          setTimeout(() => {
+            cursor.classList.add('is-clicking');
+            folderUnit.classList.add('is-clicked');
+            if (folderRipple) folderRipple.classList.add('active');
+          }, 620),
+          setTimeout(() => {
+            cursor.classList.remove('is-clicking');
+            folderUnit.classList.remove('is-clicked');
+            folderUnit.classList.add('is-fanned');
+          }, 760),
+          setTimeout(() => {
+            startDotTransition();
+          }, 2150)
+        );
+
+        if (skipBtn) {
+          skipBtn.addEventListener('click', finishOnboardingImmediate);
+        }
+      } else {
+        finishOnboardingImmediate();
+      }
+
+      // ----------------------------------------------------------------------
+      // Smart Dual Navbar + 2-Second Idle Auto-Hide (#15:372 vs #41:2270)
+      // ----------------------------------------------------------------------
+      const scrolledNavbar = document.getElementById('scrolledNavbar');
+      let idleTimer = null;
+      let isHoveringNav = false;
+      let isCursorAtTop = false;
+
+      function scheduleNavHide() {
+        clearTimeout(idleTimer);
+        if (!window.matchMedia('(min-width: 1025px)').matches) return;
+        if (window.scrollY >= 90 && !isHoveringNav && !isCursorAtTop) {
+          idleTimer = setTimeout(() => {
+            if (window.scrollY >= 90 && !isHoveringNav && !isCursorAtTop) {
+              scrolledNavbar.classList.add('is-idle-hidden');
+            }
+          }, 1000);
+        }
+      }
+
+      function updateNavbarState() {
+        const y = window.scrollY;
+        clearTimeout(idleTimer);
+
+        if (y < 90) {
+          scrolledNavbar.classList.remove('is-visible', 'is-idle-hidden');
+        } else {
+          scrolledNavbar.classList.add('is-visible');
+          scrolledNavbar.classList.remove('is-idle-hidden');
+          scheduleNavHide();
+        }
+      }
+
+      window.addEventListener('scroll', updateNavbarState, { passive: true });
+      window.addEventListener('mousemove', (e) => {
+        if (!window.matchMedia('(min-width: 1025px)').matches) return;
+        if (window.scrollY < 90) return;
+        if (e.clientY <= 90) {
+          isCursorAtTop = true;
+          clearTimeout(idleTimer);
+          scrolledNavbar.classList.add('is-visible');
+          scrolledNavbar.classList.remove('is-idle-hidden');
+        } else if (isCursorAtTop) {
+          isCursorAtTop = false;
+          if (!isHoveringNav) {
+            clearTimeout(idleTimer);
+            scrolledNavbar.classList.add('is-idle-hidden');
+          }
+        }
+      }, { passive: true });
+
+      if (scrolledNavbar) {
+        scrolledNavbar.addEventListener('mouseenter', () => {
+          isHoveringNav = true;
+          clearTimeout(idleTimer);
+        });
+        scrolledNavbar.addEventListener('mouseleave', (e) => {
+          isHoveringNav = false;
+          if (window.scrollY >= 90 && e.clientY > 90) {
+            isCursorAtTop = false;
+            clearTimeout(idleTimer);
+            scrolledNavbar.classList.add('is-idle-hidden');
+          }
+        });
+      }
+
+      // ----------------------------------------------------------------------
+      // Mobile Drawer Toggle
+      // ----------------------------------------------------------------------
+      const mobileBtns = document.querySelectorAll('.mobile-menu-btn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-item');
+
+      function closeMobileDrawer() {
+        if (!mobileDrawer) return;
+        mobileDrawer.classList.remove('open');
+        mobileBtns.forEach((b) => {
+          b.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      mobileBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const isOpen = mobileDrawer.classList.toggle('open');
+          mobileBtns.forEach((b) => {
+            b.classList.toggle('open', isOpen);
+            b.setAttribute('aria-expanded', String(isOpen));
+          });
+        });
+      });
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener('click', closeMobileDrawer);
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!mobileDrawer || !mobileDrawer.classList.contains('open')) return;
+        const clickedInsideDrawer = mobileDrawer.contains(e.target);
+        const clickedBurger = Array.from(mobileBtns).some((b) => b.contains(e.target));
+        if (!clickedInsideDrawer && !clickedBurger) {
+          closeMobileDrawer();
+        }
+      });
+
+      // ----------------------------------------------------------------------
+      // Minimal & Clean Fade-In Observer (Desktop only; instant on Tablet/Mobile)
+      // ----------------------------------------------------------------------
+      const isDesktop = window.matchMedia('(min-width: 1025px)').matches;
+      const fadeItems = document.querySelectorAll('main .fade-in-item, footer .fade-in-item');
+
+      if (isDesktop) {
+        const fadeObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                fadeObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
+        );
+        fadeItems.forEach((el) => fadeObserver.observe(el));
+      } else {
+        fadeItems.forEach((el) => el.classList.add('is-visible'));
+      }
+
+      // ----------------------------------------------------------------------
+      // Testimonials Smooth Auto Horizontal Scroll (Never stops on hover)
+      // + Left/Right Arrow Controls
+      // ----------------------------------------------------------------------
+      const testiViewport = document.getElementById('testiViewport');
+      const testiTrack = document.getElementById('testiTrack');
+      const prevBtn = document.getElementById('testiPrevBtn');
+      const nextBtn = document.getElementById('testiNextBtn');
+
+      if (testiViewport && testiTrack) {
+        const originalCards = Array.from(testiTrack.children);
+        originalCards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          testiTrack.appendChild(clone);
+        });
+
+        let scrollPos = 0;
+        let isStepping = false;
+        const speed = 0.6;
+
+        function getHalfWidth() {
+          return testiTrack.scrollWidth / 2;
+        }
+
+        function animateTestimonials() {
+          if (!isStepping) {
+            scrollPos += speed;
+            const half = getHalfWidth();
+            if (half > 0 && scrollPos >= half) {
+              scrollPos -= half;
+            }
+            testiViewport.scrollLeft = scrollPos;
+          }
+          requestAnimationFrame(animateTestimonials);
+        }
+
+        requestAnimationFrame(animateTestimonials);
+
+        function stepTestimonials(direction) {
+          isStepping = true;
+          const stepAmount = 474 * direction;
+          const half = getHalfWidth();
+          let target = testiViewport.scrollLeft + stepAmount;
+
+          if (target < 0) {
+            testiViewport.scrollLeft = half + testiViewport.scrollLeft;
+            target = testiViewport.scrollLeft + stepAmount;
+          } else if (target >= half) {
+            testiViewport.scrollLeft = testiViewport.scrollLeft - half;
+            target = testiViewport.scrollLeft + stepAmount;
+          }
+
+          testiViewport.scrollTo({
+            left: target,
+            behavior: 'smooth',
+          });
+
+          setTimeout(() => {
+            scrollPos = testiViewport.scrollLeft;
+            isStepping = false;
+          }, 520);
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', () => stepTestimonials(-1));
+        if (nextBtn) nextBtn.addEventListener('click', () => stepTestimonials(1));
+      }
+
+      // ----------------------------------------------------------------------
+      // Smooth Scroll for Navbar Links (#works, #testimonial, #faq)
+      // "About Me" stays in place without scrolling
+      // ----------------------------------------------------------------------
+      document.querySelectorAll('.nav-no-scroll').forEach((el) => {
+        el.addEventListener('click', (e) => e.preventDefault());
+      });
+
+      document.querySelectorAll('.nav-scroll-top').forEach((el) => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+
+      document.querySelectorAll('a[href^="#works"], a[href^="#testimonial"], a[href^="#faq"]').forEach((anchor) => {
+        anchor.addEventListener('click', (e) => {
+          const targetId = anchor.getAttribute('href');
+          const targetEl = targetId ? document.querySelector(targetId) : null;
+          if (!targetEl) return;
+          e.preventDefault();
+          const targetY = targetEl.getBoundingClientRect().top + window.scrollY - 20;
+          window.scrollTo({
+            top: Math.max(0, targetY),
+            behavior: 'smooth',
+          });
+        });
+      });
+
+      // ----------------------------------------------------------------------
+      // FAQ Clean Accordion Toggle (Entire card clickable from any corner)
+      // ----------------------------------------------------------------------
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach((item) => {
+        const btn = item.querySelector('.faq-question');
+        item.addEventListener('click', () => {
+          const isOpen = item.classList.toggle('is-open');
+          if (btn) btn.setAttribute('aria-expanded', String(isOpen));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+
