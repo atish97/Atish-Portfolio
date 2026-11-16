@@ -107,7 +107,7 @@
           <a href="#works">Works</a>
           <a href="#testimonial">Testimonial</a>
           <a href="#faq">FAQ</a>
-          <a href="about.html">About Me</a>
+          <a href="/about-me">About Me</a>
         </nav>
 
         <a href="#resume" class="resume-link">
@@ -136,7 +136,7 @@
           <a href="#works">Works</a>
           <a href="#testimonial">Testimonial</a>
           <a href="#faq">FAQ</a>
-          <a href="about.html">About Me</a>
+          <a href="/about-me">About Me</a>
         </nav>
 
         <a href="#resume" class="resume-link">
@@ -157,7 +157,7 @@
       <a href="#works" class="mobile-nav-item">Works</a>
       <a href="#testimonial" class="mobile-nav-item">Testimonial</a>
       <a href="#faq" class="mobile-nav-item">FAQ</a>
-      <a href="about.html" class="mobile-nav-item">About Me</a>
+      <a href="/about-me" class="mobile-nav-item">About Me</a>
       <a href="#resume" class="resume-link mobile-resume">
         <img src="assets/icon-download.svg" alt="" width="24" height="24" />
         <span>Download Resume</span>
@@ -727,7 +727,7 @@
       const isBackForward = navEntries.length > 0 && navEntries[0].type === 'back_forward';
 
       // Save state before leaving index.html (so mobile/browser Back button returns to exact scroll position without onboarding)
-      document.querySelectorAll('.project-card, a[href="about.html"]').forEach((link) => {
+      document.querySelectorAll('.project-card, a[href="about.html"], a[href="/about-me"]').forEach((link) => {
         link.addEventListener('click', () => {
           try {
             sessionStorage.setItem('skipIntro', '1');
