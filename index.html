@@ -798,11 +798,17 @@
           setTimeout(() => {
             cursor.classList.remove('is-clicking');
             folderUnit.classList.remove('is-clicked');
+            folderUnit.classList.add('is-moved');
+          }, 800),
+          setTimeout(() => {
+            folderUnit.classList.add('is-curved');
+          }, 1550),
+          setTimeout(() => {
             folderUnit.classList.add('is-fanned');
-          }, 840),
+          }, 1900),
           setTimeout(() => {
             startDotTransition();
-          }, 2450)
+          }, 3300)
         );
 
         if (skipBtn) {
