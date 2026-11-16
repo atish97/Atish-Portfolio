@@ -861,6 +861,8 @@
 
         let scrollPos = 0;
         let isStepping = false;
+        let isTouching = false;
+        let touchResumeTimer = null;
         const speed = 0.6;
 
         function getHalfWidth() {
@@ -868,7 +870,7 @@
         }
 
         function animateTestimonials() {
-          if (!isStepping) {
+          if (!isStepping && !isTouching) {
             scrollPos += speed;
             const half = getHalfWidth();
             if (half > 0 && scrollPos >= half) {
@@ -880,6 +882,39 @@
         }
 
         requestAnimationFrame(animateTestimonials);
+
+        // Touch / finger horizontal swipe + hold-to-pause on mobile/tablet
+        testiViewport.addEventListener('touchstart', () => {
+          clearTimeout(touchResumeTimer);
+          isTouching = true;
+          scrollPos = testiViewport.scrollLeft;
+        }, { passive: true });
+
+        testiViewport.addEventListener('touchmove', () => {
+          clearTimeout(touchResumeTimer);
+          isTouching = true;
+          scrollPos = testiViewport.scrollLeft;
+        }, { passive: true });
+
+        testiViewport.addEventListener('touchend', () => {
+          clearTimeout(touchResumeTimer);
+          touchResumeTimer = setTimeout(() => {
+            const half = getHalfWidth();
+            let current = testiViewport.scrollLeft;
+            if (half > 0 && current >= half) {
+              current -= half;
+              testiViewport.scrollLeft = current;
+            }
+            scrollPos = current;
+            isTouching = false;
+          }, 900);
+        }, { passive: true });
+
+        testiViewport.addEventListener('touchcancel', () => {
+          clearTimeout(touchResumeTimer);
+          scrollPos = testiViewport.scrollLeft;
+          isTouching = false;
+        }, { passive: true });
 
         function stepTestimonials(direction) {
           isStepping = true;
