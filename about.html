@@ -445,6 +445,7 @@
         el.addEventListener('click', () => {
           try {
             sessionStorage.setItem('skipIntro', '1');
+            sessionStorage.setItem('returnScrollY', '0');
           } catch (e) {}
         });
       });

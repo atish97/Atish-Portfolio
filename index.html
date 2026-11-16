@@ -656,18 +656,44 @@
 
       const hasSkipHash = ['#home', '#works', '#testimonial', '#faq'].includes(window.location.hash);
       let skipFromStorage = false;
+      let savedScrollY = null;
       try {
         skipFromStorage = sessionStorage.getItem('skipIntro') === '1';
+        savedScrollY = sessionStorage.getItem('returnScrollY');
         sessionStorage.removeItem('skipIntro');
+        sessionStorage.removeItem('returnScrollY');
       } catch (e) {}
-      const cameFromProject = /project-\d+\.html/i.test(document.referrer || '');
+      const cameFromProject = /project-\d+\.html|about\.html/i.test(document.referrer || '');
+      const navEntries = performance.getEntriesByType ? performance.getEntriesByType('navigation') : [];
+      const isBackForward = navEntries.length > 0 && navEntries[0].type === 'back_forward';
+
+      // Save state before leaving index.html (so mobile/browser Back button returns to exact scroll position without onboarding)
+      document.querySelectorAll('.project-card, a[href="about.html"]').forEach((link) => {
+        link.addEventListener('click', () => {
+          try {
+            sessionStorage.setItem('skipIntro', '1');
+            sessionStorage.setItem('returnScrollY', String(window.scrollY));
+          } catch (e) {}
+        });
+      });
+
+      // Handle bfcache restore on Back button
+      window.addEventListener('pageshow', (e) => {
+        if (e.persisted && overlay) {
+          introFinished = true;
+          overlay.style.display = 'none';
+          body.classList.remove('onboarding-active');
+          body.classList.add('page-ready');
+          revealHeroContent();
+        }
+      });
 
       // Onboarding Choreography:
       // 1. Cursor glides quickly onto the folder (40ms -> 480ms)
       // 2. Cursor clicks folder + ripple (500ms)
       // 3. 8 mockups open one-by-one toward the right side (600ms -> 1500ms)
       // 4. #444444 dot expands full screen -> fades out smoothly -> Hero fades in (1520ms)
-      if (hasSkipHash || skipFromStorage || cameFromProject) {
+      if (hasSkipHash || skipFromStorage || cameFromProject || isBackForward) {
         introFinished = true;
         if (overlay) overlay.style.display = 'none';
         body.classList.remove('onboarding-active');
@@ -677,6 +703,11 @@
             history.replaceState(null, '', window.location.pathname + window.location.search);
           } catch (e) {}
           window.scrollTo(0, 0);
+        } else if (savedScrollY !== null && !hasSkipHash) {
+          const yPos = parseFloat(savedScrollY);
+          if (!Number.isNaN(yPos)) {
+            window.scrollTo(0, yPos);
+          }
         }
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
